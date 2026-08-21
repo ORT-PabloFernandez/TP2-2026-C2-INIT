@@ -30,6 +30,25 @@ function printInventors(inventors) {
 
 // Ejercicio 1.
 // Filtrar los inventores que nacieron en el siglo XIX (1800)
-printInventors(inventors.filter(inventor => inventor.year >= 1800));
+//printInventors(inventors.filter(inventor => inventor.year >= 1800));
+
+// Ejercicio 2.
+// Convertir el apellido en mayusculas
+printInventors(
+    inventors
+        .filter(inventor => inventor.year >= 1800)
+        .map(
+        inventor => {
+            return ({
+                first: inventor.first,
+                last: inventor.last.toUpperCase(),
+                year: inventor.year
+            })
+        } 
+));
+
+// Ejercicio 3.
+// Ordenar los inventores por año de nacimiento, de menor a mayor
+printInventors(inventors.sort((a,b) => a.year - b.year));
 
 //printInventors(inventors);
