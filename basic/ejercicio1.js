@@ -50,3 +50,48 @@ const beers = [
     type: "Wheat",
   },
 ];
+
+function getPrice(beer){
+  let price = 0;
+  if(beer.name === "Purple Iris"){
+    // if ( 5 === "5")
+    price =  320;
+  } else if (price.abv < 5.0) {
+    price = 300;
+  }
+  else {
+    price = 350;
+  }
+
+  return price;
+  //return abv < 5.0 ? 300 : 350;    
+}
+
+function priceBeers(beers) {
+  return beers.map(beer => ({
+    ...beer, 
+    price: getPrice(beer)
+  }));
+}
+
+// function filenameBeers(beers) {
+//   return beers.map( beer => ({
+//     ...beer, 
+//     file_name: beer.label.split("/")[beer.label.split("/").length -1]
+//   }));
+// }
+
+const filenameBeers = beers  => 
+    beers.map( beer => ({
+    ...beer, 
+    file_name: beer.label.split("/")[beer.label.split("/").length -1]
+  }));
+//console.log(priceBeers(beers));
+//console.log(filenameBeers(beers));
+
+function sortByType(beers) {
+  //return beers.sort((a,b) => a.type > b.type ? -1 : 1);
+  return beers.sort((a,b) => a.type.localeCompare(b.type));
+}
+
+console.log(sortByType(beers));
