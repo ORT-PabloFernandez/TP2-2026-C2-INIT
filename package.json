@@ -1,0 +1,25 @@
+{
+  "name": "c2",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ORT-PabloFernandez/TP2-2026-C2-INIT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ORT-PabloFernandez/TP2-2026-C2-INIT/issues"
+  },
+  "homepage": "https://github.com/ORT-PabloFernandez/TP2-2026-C2-INIT#readme",
+  "dependencies": {
+    "chalk": "^6.0.0",
+    "cowsay": "^1.6.0"
+  }
+}

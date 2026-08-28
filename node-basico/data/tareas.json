@@ -1,0 +1,7 @@
+[
+  { "id": 1, "titulo": "Estudiar JavaScript", "completada": true },
+  { "id": 2, "titulo": "Hacer ejercicios", "completada": false },
+  { "id": 3, "titulo": "Leer documentacion", "completada": true },
+  { "id": 4, "titulo": "Preparar clase", "completada": false },
+  { "id": 5, "titulo": "Repasar arrays", "completada": true }
+]

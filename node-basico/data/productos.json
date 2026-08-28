@@ -1,0 +1,6 @@
+[
+  { "id": 1, "nombre": "Lapicera", "precio": 120 },
+  { "id": 2, "nombre": "Cuaderno", "precio": 450 },
+  { "id": 3, "nombre": "Goma", "precio": 80 },
+  { "id": 4, "nombre": "Regla", "precio": 210 }
+]

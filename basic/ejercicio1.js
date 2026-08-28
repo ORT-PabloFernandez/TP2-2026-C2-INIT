@@ -13,6 +13,8 @@
   Beers
 */
 
+import chalk from "chalk";
+
 const beers = [
   {
     name: "Purple Iris",
@@ -94,4 +96,5 @@ function sortByType(beers) {
   return beers.sort((a,b) => a.type.localeCompare(b.type));
 }
 
-console.log(sortByType(beers));
+console.log(chalk.yellow("Hola mundo en azul"));
+//console.log(chalk.blue(sortByType(beers)));
