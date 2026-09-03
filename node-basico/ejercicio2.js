@@ -14,14 +14,3 @@
   { id: 1, nombre: "Lapicera", precio: 120, precioConIva: 145.2 }
 */
 
-import fs from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const entrada = path.join(__dirname, "data", "productos.json");
-const salida = path.join(__dirname, "data", "productos-con-iva.json");
-
-// Escribe tu codigo aqui
